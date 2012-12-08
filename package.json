@@ -1,0 +1,25 @@
+{
+  "name": "serverify",
+  "version": "0.0.1",
+  "description": "Runs browserify in a server",
+  "keywords": [],
+  "author": "Mikola Lysenko",
+  "repository": "git@github.com:mikolalysenko/Serverify.git",
+  "main": "index",
+  "homepage": "https://github.com/mikolalysenko/Serverify",
+  "contributors": [
+    {
+      "name": "Mikola Lysenko"
+    }
+  ],
+  "dependencies": {
+    "express": "*",
+    "ecstatic": "*",
+    "optimist": "*",
+    "browserify": "*",
+  },
+  "devDependencies": {},
+  "bin": {
+    "serverify": "bin/serverify.js"
+  }
+}
