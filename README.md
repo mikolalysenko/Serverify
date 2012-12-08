@@ -1,4 +1,4 @@
 Serverify
 =========
 
-Simple script for launching web applications via node.js
+Uses browserify to quickly start and test node.js modules in your browser.
