@@ -68,14 +68,14 @@ bundle.on('bundle', function() {
 
 bundle.addEntry(options.entry)
 
-app.get(options.bundle_path, function(req, res) {
+app.get(options.bundle, function(req, res) {
   console.log("Serving bundle");
   res.setHeader('Cache-Control', 'no-cache, must-revaliate');
   res.send(bundle.bundle());
 })
 
 //Create static file server
-var ecstatic = require('node-static');
+var ecstatic = require('ecstatic');
 
 app.use(ecstatic({
   root: options.www,
