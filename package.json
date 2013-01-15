@@ -1,6 +1,6 @@
 {
   "name": "serverify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Runs browserify in a server",
   "keywords": [],
   "author": "Mikola Lysenko",
@@ -16,7 +16,7 @@
     "express": "*",
     "ecstatic": "*",
     "optimist": "*",
-    "browserify": "*",
+    "browserify": "*"
   },
   "devDependencies": {},
   "bin": {

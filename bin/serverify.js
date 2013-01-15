@@ -44,7 +44,6 @@ if(argv.entry ||
   }
 }
 
-
 //Create server
 var express = require('express');
 var app = express();
