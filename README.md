@@ -31,14 +31,12 @@ These parameters can be changed in one of the following ways:
 
 * You can override them via the command line, eg:
 
-    serverify --entry test.js
+      serverify --entry test.js
     
 * You can create a file called `.serverify` in the same directory as your project which contains a JSON string describing the values for the parameters:
 
-    echo "{port:9001}" > .serverify && serverify
+      echo "{port:9001}" > .serverify && serverify
 
-FAQS
-====
 
 ## Why not use browserify-server?
 
