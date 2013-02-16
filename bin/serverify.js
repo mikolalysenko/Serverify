@@ -16,6 +16,7 @@ var argv = require('optimist')
             .describe('www', 'Path to www root (default "./www")')
             .describe('bundle', 'File to bundle (default "/bundle.js")')
             .describe('port', 'Port to run server on (default 8080)')
+            .argv;
 
 if(argv.entry ||
    argv.www ||
@@ -78,10 +79,10 @@ var ecstatic = require('ecstatic');
 
 app.use(ecstatic({
   root: options.www,
-  cache: "0, must-revalidate"
+  cache: 1
 }));
 
 //Start server
-app.listen(options.port);
+app.listen(options.port|0);
 
-console.log("Test server started on port:", options.port)
+console.log("Test server started on port:", options.port|0)
